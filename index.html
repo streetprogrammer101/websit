@@ -74,18 +74,26 @@
 <section class="banner-section" style="padding-top:40px; height: 100vh;">
     <div class="container-fluid">
         <div class="row">
+            <br> <br>
             <div class="col-lg-7 col-md-12 col-sm-12 col-12">
-                <div class="banner_content">
-                    <h2 class="text-white" style=" font-family:Poppins, sans-serif;
-                    font-weight: 300;
-                    font-style: normal; font-size:50px;">Literally take $75 and generate $10,000💰💵💸
-                    </h2>
-                    <p class="text-white" style="font-size:15px;">If you can FOLLOW directions you will NOT fail‼️</p>
-                    <p class="text-white" style="line-height:6px; font-size:15px;">In order to make money you HAVE TO FOLLOW DIRECTIONS ‼️‼️💯</p>
-                    <br>
+                <div class="banner_content"> <br> <br>
+                    <h2 class="text-white fw-light" style="font-family:Poppins, sans-serif; font-style: normal; font-size: 40px; line-height:40px;" 
+                    class="display-4 display-md-3 display-lg-1">Literally take $75  <br> and generate $10,000💰💵💸
+                </h2>
+                
+                <p class="text-white d-md-block" style="font-size: 10px; font-size:clamp(12px, 2vw, 20px);">
+                    If you can FOLLOW directions you will NOT fail‼️
+                </p>
+                
+                <p class="text-white" style="line-height:6px; font-size:clamp(10px, 1.5vw, 16px);">
+                    In order to make money you HAVE TO FOLLOW DIRECTIONS ‼️‼️
+                </p>
+                
                     <div class="banner-button">
                         <a class="button1 lets_talk text-decoration-none" href="https://go.e1ulife.com/ai-takeover?affid=24kdreams2">Register<i class="circle fa-regular fa-angle-right"></i></a>
-                        <a class="lets_talk text-decoration-none" href="contact.html">watch video<i class="circle fa-regular fa-angle-right"></i></a>   
+                        <a class="lets_talk text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#videoModal">
+                            Watch Video <i class="circle fa-regular fa-angle-right"></i>
+                        </a>                        
                     </div> 
                 </div>
             </div>
@@ -140,8 +148,34 @@
     </div>
     </div>
 </section>
+
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel">Watch Video</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="ratio ratio-16x9">
+                    <iframe id="youtubeVideo" src="https://www.youtube.com/embed/iTpMA4aNbcc?si=Ufr0a3gCa3M_J5Q7" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var videoModal = document.getElementById('videoModal');
+    videoModal.addEventListener('hidden.bs.modal', function () {
+        var iframe = document.getElementById('youtubeVideo');
+        iframe.src = iframe.src; // Reset video URL to stop playback
+    });
+</script>
 <!-- Footer -->
 <!-- Latest compiled JavaScript -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 <script src="assets/js/jquery-3.6.0.min.js"> </script>
 <script src="assets/js/bootstrap.min.js"> </script>
 <script src="assets/js/video_link.js"></script>
